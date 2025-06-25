@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'IBMPlexMono';
+    src: url(./font/IBMPlexMono-Regular.ttf);}
+
+*{
+    font-family: 'IBMPlexMono';
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img1 {
+    height: 96vh;
+    width: auto;
+    margin-top: 2vh;
+    max-height: 100%;
+    position: relative;
+}
+
+#back {
+    height: 96vh;
+    width: auto;
+    position: relative;
+    z-index: 1;
+}
+
+#mainDiv {
+    height: 98%;
+    width: 96%;
+    margin-top: -173%;
+    margin-left: 2%;
+    position: absolute;
+    z-index: 2;
+    overflow-x: hidden;
+    animation: back 30s linear infinite;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blocks2 {
+    width: 100%;
+}
+
+.img_width {
+    width: 100%;
+}
+
+#img_7 {
+    margin-bottom: -5vw;
+}
+
+@keyframes back {
+    0% {background-image: url(../imgs/sec_kashp.png) ;}
+    10% {background-image: url(../imgs/fourth_parts.png) ;}
+    25% {background-image: url(../imgs/fourth_parts.png) ;}
+    35% {background-image: url(../imgs/six_parts.png) ;}
+    50% {background-image: url(../imgs/six_parts.png) ;}
+    60% {background-image: url(../imgs/eight_kasp.png) ;}
+    75% {background-image: url(../imgs/eight_kasp.png) ;}
+    85% {background-image: url(../imgs/sec_kashp.png) ;}
+    100% {background-image: url(../imgs/sec_kashp.png) ;}
+}
