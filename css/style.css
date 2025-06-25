@@ -18,20 +18,9 @@ body {
     align-items: center;
 }
 
-#img1 {
-    height: 96vh;
-    width: auto;
-    margin-top: 2vh;
-    max-height: 100%;
-    position: relative;
-}
 
-#back {
-    height: 96vh;
-    width: auto;
-    position: relative;
-    z-index: 1;
-}
+
+
 
 #mainDiv {
     height: 98%;
@@ -69,4 +58,42 @@ body {
     75% {background-image: url(../imgs/eight_kasp.png) ;}
     85% {background-image: url(../imgs/sec_kashp.png) ;}
     100% {background-image: url(../imgs/sec_kashp.png) ;}
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+
+    #back {
+        height: 85vh;
+        width: auto;
+        position: relative;
+        z-index: 1;
+    }
+
+    #img1 {
+        height: 85vh;
+        width: auto;
+        margin-top: 2vh;
+        max-height: 100%;
+        position: relative;
+    }
+
+}
+
+@media screen and (min-width: 501px) {
+
+    #back {
+        height: 96vh;
+        width: auto;
+        position: relative;
+        z-index: 1;
+    }
+
+    #img1 {
+        height: 96vh;
+        width: auto;
+        margin-top: 2vh;
+        max-height: 100%;
+        position: relative;
+    }
+
 }
